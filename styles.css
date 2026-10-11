@@ -1,0 +1,530 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172b4d;
+    background-color: #ffffff;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+.nav-link {
+    color: #173f7a !important;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #0d8f83 !important;
+}
+
+
+/* =========================================
+   HERO / INICIO
+========================================= */
+
+.hero {
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(12, 42, 78, 0.80),
+            rgba(12, 42, 78, 0.80)
+        ),
+        url("imagenes/banner.jpeg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.hero-text {
+    max-width: 600px;
+    color: white;
+}
+
+.small-title {
+    color: #0fa899;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.05;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #36c9bd;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.btn-primary {
+    background-color: #078f83;
+    border-color: #078f83;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #056f66;
+    border-color: #056f66;
+}
+
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+.section {
+    padding: 90px 20px;
+}
+
+.section-light {
+    background-color: #f5f8fc;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 55px;
+}
+
+.section-title span {
+    color: #0a978b;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+.section-title p {
+    color: black;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TARJETAS INFORMACIÓN
+========================================= */
+
+.info-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+    height: 100%;
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* IMÁGENES DE INFORMACIÓN */
+
+.info-card .icon {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.info-card .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.info-card h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: black;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   CARRERAS
+========================================= */
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.career-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.career-card:hover {
+    transform: translateY(-7px);
+}
+
+
+/* IMÁGENES DE CARRERAS */
+
+.career-icon {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.career-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.career-card h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.career-card p {
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   SERVICIOS
+========================================= */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    border: 1px solid #e4e9f0;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+}
+
+
+/* IMÁGENES DE SERVICIOS */
+
+.service-icon {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.service-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: black;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.register-section {
+    padding: 100px 20px;
+    background-color: #eef5fa;
+}
+
+.register-box {
+    max-width: 1050px;
+    margin: auto;
+
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.10);
+}
+
+.register-info {
+    background-color: #173f7a;
+    color: white;
+
+    padding: 60px 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-info h2 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.register-info p {
+    line-height: 1.7;
+}
+
+.register-form {
+    padding: 50px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #344054;
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   MENSAJES JAVASCRIPT
+========================================= */
+
+#mensaje {
+    margin-top: 20px;
+}
+
+.mensaje-exito {
+    padding: 15px;
+    border-radius: 8px;
+
+    background-color: #d1fae5;
+    color: #065f46;
+
+    font-weight: bold;
+}
+
+.mensaje-error {
+    padding: 15px;
+    border-radius: 8px;
+
+    background-color: #fee2e2;
+    color: #991b1b;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TU FUTURO EMPIEZA HOY
+========================================= */
+
+.contact-section {
+    padding: 90px 20px;
+}
+
+.contact-section p1 {
+    color: #173f7a;
+    font-size: 40px;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background-color: #173f7a;
+    color: white;
+
+    padding: 45px 20px;
+}
+
+.footer h3 {
+    font-size: 30px;
+}
+
+.footer p {
+    color: #d9e4f5;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .career-grid,
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .career-grid,
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .register-box {
+        grid-template-columns: 1fr;
+    }
+
+    .register-info {
+        padding: 40px 30px;
+    }
+
+    .register-info h2 {
+        font-size: 34px;
+    }
+
+    .register-form {
+        padding: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .logo-img {
+        height: 45px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 65px 15px;
+    }
+
+}
